@@ -5,9 +5,9 @@ class Cs142TemplateProcessor{
 
     fillIn(dictionary) {
         var temp = this.template;
-        for (var key in dictionary) {
-            var re = new RegExp('\\{\\{' + key + '\\}\\}');
-            temp = temp.replace(re, dictionary[key]);
+        for (var FIRST in dictionary) {
+            var SECOND = new RegExp('\\{\\{' + FIRST + '\\}\\}');
+            temp = temp.replace(SECOND, dictionary[FIRST]);
         }
         temp = temp.replace(new RegExp('\\{\\{\\w+\\}\\}', "g"), "");
         return temp;
