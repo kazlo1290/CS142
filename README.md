@@ -2,6 +2,6 @@
 
 
 ## Commands
-npm install
-npm run jshint
-npm test
+- npm install
+- npm run jshint
+- npm test
